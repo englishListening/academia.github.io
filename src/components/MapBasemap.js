@@ -10,8 +10,8 @@ L.Icon.Default.imagePath = "https://unpkg.com/leaflet@1.5.0/dist/images/";
 class MapComponent extends React.Component {
     
   state = {
-    lat: 55.702868,
-    lng: 37.530865,
+    lat: 41.193200,
+    lng: 69.229660,
     zoom: 10,
     basemap: 'osm'
   };
