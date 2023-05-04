@@ -92,7 +92,7 @@ const ReadingProps = (props)=>{
         <div>
         <h1 className="hh">{props.name}</h1>
         <p className="readp">{props.info}</p>
-        <button className="dowload"><Readhref href={props.Url}>Dowload</Readhref></button>
+        <button className="dowload"><Readhref href={props.Url} target="_blank">Dowload</Readhref></button>
         </div>
         </ReadDiv>
 
