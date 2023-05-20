@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Audio from "./Video.mp4"
+import Audio from "./images//Video.mp4"
 import HEADER from "../Parts/HEADER";
 import { useState,useEffect } from "react";
 import { collection,getDocs } from "firebase/firestore";

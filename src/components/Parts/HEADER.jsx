@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {NavItem,Nav,NavLink,Button} from 'reactstrap';
-import teacher from "./teacher.png"
+import teacher from "./photos/teacher.png"
 
     const Container = styled("div")`
     
@@ -16,15 +16,18 @@ import teacher from "./teacher.png"
   const Header = styled("div")`
      background: linear-gradient(110deg, #33a7ef 50%, rgba(238, 85, 20, 0) 0);
       height: 700px;
-      margin: 0;
-      animation: span 2s ease-in-out;
+      margin-left: -1rem;
+      animation: span 2s ease-out ;
 
     @keyframes span {
       0%{
         margin-left: -100rem;
       }
+      99%{
+        margin-left: -10rem;
+      }
       100%{
-        margin: 0;
+        margin-left: -1rem;
       }
     }
   `

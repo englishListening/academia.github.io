@@ -34,43 +34,47 @@ const Signbutton = styled("button")`
     margin: 50px;
     height: 50px;
     font-size: 24px;
-`
+    `
 function SignUp({setIsAuth}){
+
+
     const [name,setName] = useState([])
     const [password,setPassword] = useState([])
+    let navigate = useNavigate()
+
+    // signInWithPopup(auth, provider).then((result) => {
+    //     localStorage.setItem("isAuth", true)
+    //     setIsAuth(true)
+    //     navigate('/')}
+
     const HandleSubmit = (e) =>{
         e.preventDefault();
         console.log(e.target.name.value);
         console.log(e.target.password.value);
         e.target.name.value = ""
         e.target.password.value = ""
+        navigate('/')
     }
-    let navigate = useNavigate()
-    const signInWithGoogle = () => {
-        signInWithPopup(auth, provider).then((result) => {
-            localStorage.setItem("isAuth", true)
-            setIsAuth(true)
-            navigate('/')
-        })
-    }
+
    
-    return ( <SignUpdiv>
-        
+    return( <SignUpdiv>
+      
         <form onSubmit={(e) => HandleSubmit(e)}>
         <Uph1>Login</Uph1>
         <SignUpInput id='name' value={name} onChange = {(e) => setName(e.target.value)} placeholder='email2023@gmail.com' required/>
         <SignUpInput id='password' value={password} onChange = {(e) => setPassword(e.target.value)} placeholder='Password' required/>
         
-        <Link to={`/`}><Button color='primary'>Submit</Button></Link>
+        <Button type='submit' color='primary'>Submit</Button>
         </form>
-        <Signbutton className="login-with-google-btn" onClick={signInWithGoogle}>
+        <Signbutton className="login-with-google-btn">
             Sign In With Google
         </Signbutton>
     </SignUpdiv>
     )
+    }
     
     
-}
+
 
 
 export default SignUp

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Test from "./Test.png"
-import Script from "./Script.png"
-import Answer from "./Answers.png"
-import Podcast from "./Podcast.png"
-import Podcast2 from "./Poscast2.png"
+import Test from "./photos/Test.png"
+import Script from "./photos/Script.png"
+import Answer from "./photos/Answers.png"
+import Podcast from "./photos/Podcast.png"
+import Podcast2 from "./photos/Poscast2.png"
 const AUDIO = styled("audio")`
     width: 500px;
     color: #33a7ef;

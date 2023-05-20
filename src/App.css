@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+/* body{
+  background-image: url("https://get.pxhere.com/photo/man-person-girl-woman-camera-photography-portrait-spring-red-lens-color-autumn-canon-romance-season-taking-photo-photograph-beauty-emotion-photo-shoot-portrait-photography-1169775.jpg");
+  background-size: 100%;  
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -10,6 +10,8 @@ import MapComponent from "../MapBasemap";
 import HEADER from "../Parts/HEADER";
 import FOOTER from "../Parts/Footer";
 import Googlepay from "../GooglePay";
+import LOMO from "./images/clock.png"
+
 import { Link } from "react-router-dom";
 
 const Ahref = styled("a")`
@@ -30,7 +32,7 @@ color:#001499;
 }
 `
     const Container = styled("div")`
-    
+      
       margin: 0 auto;
       text-align: center;
     `
@@ -284,7 +286,7 @@ return(
             Types of learning 
           </Abouth1>
           <Container1>
-          <TypeCards>
+          <TypeCards id="Types">
             {englishType.map((d)=>(
               
           <TypeCard>
@@ -315,11 +317,11 @@ return(
           <Abouth1>
             How much our pupils have IELTS +7
           </Abouth1>
-          <BarChart/>
+          <BarChart id="yetti"/>
           </Container1>
         </About>
         <About>
-          <Container1>
+          <Container1 id="location">
           <Abouth1>
             Our Location
           </Abouth1>
@@ -330,6 +332,7 @@ return(
           <MapComponent/>
           </AboutDiv>
           </Container1>
+        
         </About>
           <FOOTER/>
         </Container>

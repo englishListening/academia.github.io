@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Animation from "../Pages/Animation";
 
-
+const Div = styled("div")`
+  height: 400px;
+padding-top:20px;
+`
     const Footer = styled("footer")`
+    
  
- display:flex;
- justify-content: space-between;
  background-color: #33a7ef;
  `
 const FooterItem = styled("ul")`
@@ -59,9 +62,10 @@ margin: auto 1rem;
   color: red;
  }
  `
- const FOOTER = () =>{
+ const FOOTER = (idOne,idTwo,idThree) =>{
     return(
         <Footer>
+          
         <FooterContainer>
             <FooterItem>
               <Navlink> <Ahref href="/"><FooterH1>Academia</FooterH1></Ahref> </Navlink>
@@ -72,16 +76,16 @@ margin: auto 1rem;
             </FooterItem>
             <FooterItem>
               <Navlink><h3>Our Servises</h3></Navlink>
-              <Navlink><Ahref href="">Types</Ahref></Navlink>
-              <Navlink><Ahref href="">IELTS +7</Ahref></Navlink>
-              <Navlink><Ahref href="">Location</Ahref></Navlink>
+              <Navlink><Ahref href={`#Types`}>Types</Ahref></Navlink>
+              <Navlink><Ahref href={`#yetti`}>IELTS +7</Ahref></Navlink>
+              <Navlink><Ahref href={`#location`}>Location</Ahref></Navlink>
               
             </FooterItem>
             <FooterItem>
               <Navlink><h3>Chanels</h3></Navlink>
-              <Navlink><Ahref href="https://www.youtube.com/@CODDYSchool">You Tube</Ahref></Navlink>
-              <Navlink><Ahref href="https://www.instagram.com/coddycamp_it_akademiya/">Instagram</Ahref></Navlink>
-              <Navlink><Ahref href="https://www.facebook.com/coddycamp">Facebook</Ahref></Navlink>
+              <Navlink><Ahref href="https://www.youtube.com/@CODDYSchool" target="_blank">You Tube</Ahref></Navlink>
+              <Navlink><Ahref href="https://www.instagram.com/coddycamp_it_akademiya/" target="_blank">Instagram</Ahref></Navlink>
+              <Navlink><Ahref href="https://www.facebook.com/coddycamp" target="_blank">Facebook</Ahref></Navlink>
               
             </FooterItem>
             
